@@ -11,4 +11,9 @@ import scrapy
 class PttItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    boardlink = scrapy.Field()
+    boardName = scrapy.Field()
+    push = scrapy.Field()
+    boardClass = scrapy.Field()
+    boardTitle = scrapy.Field()
+    # pass
