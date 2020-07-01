@@ -21,6 +21,14 @@ FEED_EXPORT_ENCODING='utf-8'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
+# MongoDB pipeline
+ITEM_PIPELINES = {
+    'Ptt.pipelines.PttPipeline': 300,
+}
+MONGO_HOST = 'localhost'
+MONGO_PORT = '27017'
+MONGO_DATABASE = 'PTT'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
